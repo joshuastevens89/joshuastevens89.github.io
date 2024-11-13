@@ -1,26 +1,139 @@
-/* General table styling */
-table {
-    width: 100%;
-    border-collapse: collapse; /* Removes extra space between cells */
-    margin: 20px 0;
-    font-size: 16px;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'calibri', sans-serif;
+    line-height: 1.6;
+    background-color: black;
+    color: black;
+}
+
+/* Header Styling */
+.main-header {
+    background-color: black;
+    color: white;
+    padding: 1rem;
     text-align: left;
-  }
-  
-  /* Add borders to cells */
-  th, td {
-    border: 1px solid #ddd; /* Border for each cell */
-    padding: 10px; /* Controls cell padding */
-  }
-  
-  /* Style the header row */
-  th {
-    background-color: #f4f4f4; /* Light background for headers */
+    border: solid white 8px;
+}
+
+.site-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    border: solid yellow 8px;
+    padding: 4px;
+    font: calibri;
+}
+
+.primary-nav .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+    padding: 0;
+    
+}
+.secondary-nav .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    padding: 1em;
+    font-variant: small-caps;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
     font-weight: bold;
-  }
-  
-  /* Add a hover effect for rows */
-  tr:hover {
-    background-color: #f9f9f9; /* Light gray background on hover */
-  }
-  
+    justify-content: left;
+    
+}
+
+.nav-link:hover {
+    color: orange;
+}
+
+/* Section Styling */
+.content-section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 1000px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    border: white solid 4px;
+    
+}
+
+.section-title {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+    border: solid 4px yellow;
+    padding-inline: 1rem;
+    margin:1em;
+    
+}
+
+.section-text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    border: solid 4px yellow;
+    padding: 1rem;
+}
+
+/* Table Styling */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+.styled-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Footer Styling */
+.site-footer {
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 1rem ;
+    border: solid white 4px;
+}
+
+.footer-nav .footer-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    background-color: black;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+.footer-nav {
+    color: white;
+}
+a {
+    color: white;
+}
+a:hover {
+    color:orange;
+}
