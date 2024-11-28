@@ -149,3 +149,54 @@ a:hover {
 .section-title, .section-text {
     padding: 0 20px;
 }
+img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+    
+  }
+  article {
+    display: flex;
+    align-items: flex-start; /* Aligns all items to the top */
+    gap: 20px; /* Space between image and text */
+    width: 66%;
+    padding: 10px;
+    margin: 10px 0;
+
+   
+    
+  }
+  
+  figure {
+    margin: 0; /* Remove default margin */
+    display: -webkit-box;
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center; /* Center-aligns image and caption */
+    max-width: 250px; /* Ensure it doesn't overflow */
+    
+  }
+  
+  img {
+    width: 300px; /* Ensure the image takes up the full width of the figure */
+    height: 300px;
+  }
+  
+  figcaption {
+    font-size: 0.9em; /* Smaller text for the caption */
+    text-align: right; /* Center-align text under the image */
+    margin-top: 5px; /* Add a bit of space above the caption */
+  }
+  
+  p {
+    flex: 1; /* Allow the paragraph to take up the remaining space */
+    text-align: justify;
+    line-height: 1.6;
+  }
+  #section-1-article-paragraph {
+    max-width: 250px;
+    border: solid white 2px;
+    padding: 20px;
+    margin: 20px 0;
+  }
