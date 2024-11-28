@@ -26,7 +26,7 @@ body {
     margin-bottom: 0.5rem;
     border: solid yellow 8px;
     padding: 4px;
-    font: calibri;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .primary-nav .nav-list {
@@ -158,10 +158,11 @@ img {
     
   }
   article {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: flex-start; /* Aligns all items to the top */
     gap: 20px; /* Space between image and text */
-    width: 66%;
+    width: 50%;
     padding: 10px;
     margin: 10px 0;
 
@@ -171,7 +172,7 @@ img {
   
   figure {
     margin: 0; /* Remove default margin */
-    display: -webkit-box;
+    display: grid;
     flex-direction: column; /* Stack image and caption vertically */
     align-items: center; /* Center-aligns image and caption */
     max-width: 250px; /* Ensure it doesn't overflow */
