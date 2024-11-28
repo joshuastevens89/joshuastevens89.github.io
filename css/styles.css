@@ -194,7 +194,7 @@ img {
     text-align: justify;
     line-height: 1.6;
   }
-  #section-1-article-paragraph {
+ .figcaption {
     max-width: 250px;
     border: solid white 2px;
     padding: 20px;
