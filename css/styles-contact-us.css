@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: yellow;
+    color: black;
+    padding: 20
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+label, input, textarea, select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+}

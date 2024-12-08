@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/styles-contact-us.css">
+</head>
+<body>
+    <nav>
+        <!-- Link to other pages here, including the Contact Us page -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Contact Us</h1>
+        <form action="success.html" method="get">
+            <!-- Form fields will go here -->
+            <fieldset>
+                <legend>Contact Information</legend>
+        
+                <!-- Name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+        
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+        
+                <!-- Message -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <br>
+        
+                <!-- Radio Buttons -->
+                <label>How did you hear about us?</label>
+                <br>
+                <input type="radio" id="radio1" name="source" value="Friend" required>
+                <label for="radio1">Friend</label>
+                <input type="radio" id="radio2" name="source" value="Advertisement">
+                <label for="radio2">Advertisement</label>
+                <input type="radio" id="radio3" name="source" value="Search Engine">
+                <label for="radio3">Search Engine</label>
+                <br>
+        
+                <!-- Checkboxes -->
+                <label>What would you like to know?</label>
+                <br>
+                <input type="checkbox" id="info1" name="info[]" value="Pricing">
+                <label for="info1">Comedy</label>
+                <input type="checkbox" id="info2" name="info[]" value="Product Details">
+                <label for="info2">Coding</label>
+                <br>
+        
+                <!-- Dropdown Menu -->
+                <label for="topic">Select a topic:</label>
+                <select id="topic" name="topic">
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Support</option>
+                </select>
+                <br>
+        
+                <!-- Submit and Reset Buttons -->
+                <button type="submit" onclick="window.location.href='success.html'">Submit</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <!-- Footer content here -->
+        <p>© 2024 Joshua Stevens</p>
+    </footer>
+</body>
+</html>
